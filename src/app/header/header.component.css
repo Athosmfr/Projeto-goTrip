@@ -1,6 +1,122 @@
-h4 {
-    font-weight: 700;
+.cabeca-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(rgb(241, 241, 241), rgb(255,254,213));
+}
+
+img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.passagem-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30vh;
+}
+
+h2 {
     font-size: 22px;
-    text-align: center;
-    padding-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    justify-self: flex-start;
+}
+
+.botao-dir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.ida-volta {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 14px;
+    font-style: italic;
+    align-self: center;
+    border: 1px solid rgb(166, 199, 19);
+    padding: 15px 35px;
+    margin-top: 30px;
+}
+
+.ida-volta:hover {
+    border: 3px solid rgb(110, 168, 16);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.ida {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 14px;
+    font-style: italic;
+    align-self: center;
+    border: 1px solid rgb(166, 199, 19);
+    padding: 15px 35px;
+    margin-top: 30px;
+}
+
+.ida:hover {
+    border: 3px solid rgb(110, 168, 16);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.passagem-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cidad {
+    display: grid;
+    grid-template-columns: 11.5rem 15rem 4rem 15rem 4rem;
+    grid-template-rows: 2rem auto auto 2rem ;
+}
+
+.perg-saida {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.perg-entr {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.busca-1 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.busca-2 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.datas {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.cont-idavolta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bot-buscar {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 5rem;
+    
 }
