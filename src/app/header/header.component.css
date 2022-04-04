@@ -22,7 +22,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     color: white;
     padding: 0 1rem;
 }
