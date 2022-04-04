@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .texto-banner {
@@ -30,4 +31,24 @@
   background: rgb(125, 150, 14);
   color: white;
   border-radius: 10px;
+  margin: 0 10px;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.imagem-banner {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.nome-banner {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.desc-banner {
+  text-align: justify;
+  padding: 0 10px 0 20px;
+  width: 260px;
 }

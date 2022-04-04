@@ -11,6 +11,12 @@
       "nomeProduto": "São Paulo",
       "descProduto": "Descrição Produto",
       "fotoProduto": "/../assets/saopaulo.jpg"
+    },
+    {
+      "id":3,
+      "nomeProduto": "Curitiba",
+      "descProduto": "Descrição Produto",
+      "fotoProduto": ""
     }
   ]
 }

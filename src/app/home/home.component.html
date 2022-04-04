@@ -1,13 +1,11 @@
-<h1>Pagina Inicial</h1>
-
 <div class="guia-destinos">
     <div class="texto-banner">
         <h4 class="texto-banner__titulo"> Destinos e lugares para viajar</h4>
         <p class="texto-banner__subtitulo">Conheça os destinos que ofertamos a você e planeje sua próxima viagem!</p>
     </div>
     <div class="banner-produto" *ngFor="let produto of produtos">
-        <img src="{{produto.fotoProduto}}" alt="">
-        <h3>{{produto.nomeProduto}}</h3>
-        <h3>{{produto.descProduto}}</h3>
+        <img class="imagem-banner" src="{{produto.fotoProduto}}" alt="">
+        <h3 class="nome-banner">{{produto.nomeProduto}}</h3>
+        <h3 class="desc-banner">{{produto.descProduto}}</h3>
     </div>
 </div>
