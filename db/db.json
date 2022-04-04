@@ -2,13 +2,13 @@
   "produtos": [
     {
       "id": 1,
-      "nomeProduto": "Produto 1",
+      "nomeProduto": "Rio de Janeiro",
       "descProduto": "Descrição Produto",
       "fotoProduto": "/../assets/rio.jpg"
     },
     {
       "id": 2,
-      "nomeProduto": "Produto 2",
+      "nomeProduto": "São Paulo",
       "descProduto": "Descrição Produto",
       "fotoProduto": "/../assets/saopaulo.jpg"
     }

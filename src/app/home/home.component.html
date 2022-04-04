@@ -1,10 +1,13 @@
 <h1>Pagina Inicial</h1>
 
-<mat-slider min="1" max="100" step="1" value="50"></mat-slider>
-
-<div *ngFor="let produto of produtos">
-    <h3>{{produto.nomeProduto}}</h3>
-    <h3>{{produto.id}}</h3>
-    <h3>{{produto.descProduto}}</h3>
-    <img src="{{produto.fotoProduto}}" alt="">
+<div class="guia-destinos">
+    <div class="texto-banner">
+        <h4 class="texto-banner__titulo"> Destinos e lugares para viajar</h4>
+        <p class="texto-banner__subtitulo">Conheça os destinos que ofertamos a você e planeje sua próxima viagem!</p>
+    </div>
+    <div class="banner-produto" *ngFor="let produto of produtos">
+        <img src="{{produto.fotoProduto}}" alt="">
+        <h3>{{produto.nomeProduto}}</h3>
+        <h3>{{produto.descProduto}}</h3>
+    </div>
 </div>

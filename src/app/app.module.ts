@@ -42,6 +42,7 @@ import { HttpClientModule } from "@angular/common/http";
     MatAutocompleteModule,
     MatSliderModule,
     MatTableModule,
+    MatIconModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,
