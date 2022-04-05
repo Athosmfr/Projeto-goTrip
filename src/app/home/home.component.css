@@ -1,7 +1,7 @@
 .guia-destinos {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 40px;
   flex-wrap: wrap;
 }
@@ -9,7 +9,7 @@
 .texto-banner {
   background-color: rgb(125, 150, 14);
   padding: 20px;
-  margin: 0 20px;
+  margin: 0 10px;
   width: 300px;
   border-radius: 10px;
   color: white;
