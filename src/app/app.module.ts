@@ -22,6 +22,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { HttpClientModule } from "@angular/common/http";
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { HttpClientModule } from "@angular/common/http";
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    AdminComponent
+    AdminComponent,
+    LoginComponent
   ],
   imports: [
     MatDatepickerModule,
