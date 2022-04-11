@@ -14,13 +14,17 @@
             <div class="example-container">
                 <mat-form-field>
                   <mat-label>Insira sua senha</mat-label>
-                  <input matInput [type]="hide ? 'password' : 'text'">
+                  <input class="login-input" matInput [type]="hide ? 'password' : 'text'">
                   <button class="botao-olho" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                     <mat-icon class="icone-olho">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                   </button>
                 </mat-form-field>
             </div>
         </div>
-        
+        <button class="botao-login"><a [routerLink]="'/admin'" class="login-admin">Entrar</a></button>
+        <div class="cadastro-container">
+            <h4 class="titulo-cadastro">Não possui conta?</h4>
+            <button class="botao-cadastro">Cadastre-se</button>
+        </div>
     </div>
 </div>

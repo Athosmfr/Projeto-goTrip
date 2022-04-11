@@ -16,9 +16,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.service.listar().subscribe(produto => {
-      console.log(produto);
-    });
   }
 
 }

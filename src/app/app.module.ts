@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
 import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -20,9 +21,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
 
 import { HttpClientModule } from "@angular/common/http";
-import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { LoginComponent } from './login/login.component';
     MatSliderModule,
     MatTableModule,
     MatIconModule,
+    MatCardModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserModule,

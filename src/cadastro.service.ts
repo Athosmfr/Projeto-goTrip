@@ -11,7 +11,25 @@ export class CadastroService {
 
   constructor(private http: HttpClient) { }
 
-  listar() {
-    return this.http.get<Produto>("http://localhost:3001/produtos/1")
+  URL = "http://localhost:3001/produtos"
+
+  listarProdutos() : Observable<Produto[]>{    
+    return this.http.get<Produto[]>(this.URL);
+  }
+
+  buscarPorId(id : number): Observable<Produto>{
+    return this.http.get<Produto>(this.URL + "/" + id)
+  }
+
+  incluirProduto(produto : Produto) {
+    this.http.post(this.URL, produto);
+  }
+
+  atualizarProduto(produto: Produto, id : number) {
+    this.http.put(this.URL + "/" + id, produto);
+  }
+
+  excluirProduto(id : number) {
+    this.http.delete(this.URL + "/" + id);
   }
 }
