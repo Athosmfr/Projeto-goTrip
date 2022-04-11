@@ -1,9 +1,16 @@
 .guia-destinos {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 40px;
   flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 1440px) {
+  .guia-destinos {
+    justify-content: center;
+  }
 }
 
 .texto-banner {
@@ -30,10 +37,10 @@
 
 .banner-produto {
   background: rgb(125, 150, 14);
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   margin: 0 10px;
-  border: 1px solid rgb(0, 0, 0, 0.2);
+  border: 1px solid rgb(0, 0, 0, 0.3);
 }
 
 .imagem-banner {
@@ -46,10 +53,55 @@
   font-size: 22px;
   text-align: center;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .desc-banner {
   text-align: justify;
   padding: 0 10px 0 20px;
   width: 260px;
+}
+
+.atributos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.atributos-teste {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+  height: auto;
+  margin-bottom: 3%;
+}
+
+.imagem-atributos {
+  width: 800px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.texto-atributos {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.titulo-atributos {
+  font-size: 22px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.descricao-atributos {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
 }
