@@ -1,0 +1,106 @@
+.guia-destinos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+@media screen and (min-width: 1440px) {
+  .guia-destinos {
+    justify-content: center;
+  }
+}
+
+.texto-banner {
+  background-color: rgb(125, 150, 14);
+  padding: 20px;
+  margin: 0 10px;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+}
+
+.texto-banner__titulo {
+  font-size: 22px;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.texto-banner__subtitulo {
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.banner-produto {
+  background: rgb(125, 150, 14);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.imagem-banner {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.nome-banner {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.desc-banner {
+  text-align: justify;
+  padding: 0 10px 0 20px;
+  width: 260px;
+}
+
+.atributos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.atributos-teste {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+  height: auto;
+  margin-bottom: 3%;
+}
+
+.imagem-atributos {
+  width: 800px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.texto-atributos {
+  position: absolute;
+  width: 200px;
+  height: 360px;
+  background: rgb(255, 255, 255);
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  border-right: none;
+}
+
+.titulo-atributos {
+  font-size: 22px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.descricao-atributos {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}

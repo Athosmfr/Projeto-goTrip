@@ -1,0 +1,91 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(30, 30, 30);
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background: rgb(106, 160, 44);
+    padding: 20px 0;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.container-email {
+    color: white;
+}
+
+.campo-email {
+    width: 220px;
+}
+
+.titulo-usuario {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+.titulo-login {
+    text-align: start;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: underline;
+}
+
+.botao-olho {
+    background: rgb(106, 160, 44);
+    border: none;
+}
+
+.icone-olho {
+    background: rgb(106, 160, 44);
+}
+
+.botao-login {
+    background: rgb(30, 30, 30);
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login-admin {
+    text-decoration: none;
+    color: white;
+}
+
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titulo-cadastro {
+    color: white;
+}
+
+.botao-cadastro {
+    border: none;
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.login-input {
+    color: white;
+}
