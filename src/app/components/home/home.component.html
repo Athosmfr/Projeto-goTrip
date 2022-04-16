@@ -1,12 +1,14 @@
+<app-header></app-header>
+
 <div class="guia-destinos">
     <div class="texto-banner">
         <h4 class="texto-banner__titulo"> Destinos e lugares para viajar</h4>
         <p class="texto-banner__subtitulo">Conheça os destinos que ofertamos a você e planeje sua próxima viagem!</p>
     </div>
-    <div class="banner-produto" *ngFor="let produto of produtos">
-        <img class="imagem-banner" src="{{produto.fotoProduto}}" alt="">
-        <h3 class="nome-banner">{{produto.nomeProduto}}</h3>
-        <h3 class="desc-banner">{{produto.descProduto}}</h3>
+    <div class="banner-produto" *ngFor="let local of locais">
+        <img class="imagem-banner" src="{{ local.foto }}" alt="">
+        <h3 class="nome-banner">{{ local.nomeLocal }}</h3>
+        <h3 class="desc-banner">{{ local.descricao }}</h3>
     </div>
 </div>
 <div class="atributos-container">
