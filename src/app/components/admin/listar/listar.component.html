@@ -27,8 +27,8 @@
   <ng-container matColumnDef="acoes">
     <th mat-header-cell *matHeaderCellDef style="text-align: center; padding-right: 35px"> Ações </th>
     <td class="ultima-coluna" mat-cell *matCellDef="let produto">
-      <a routerLink="/cadastros/produtos/editar/{{ produto.codigo }}">Editar</a>
-      <a routerLink="/cadastros/produtos/excluir/{{ produto.codigo }}">Excluir</a>
+      <a routerLink="/admin/atualizar/{{ produto.codigo }}">Editar</a>
+      <a routerLink="/admin/excluir/{{ produto.codigo }}">Excluir</a>
     </td>
   </ng-container>
 
