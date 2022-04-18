@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { LocaisService } from 'src/app/services/locais.service';
+import { LocaisService } from 'src/services/locais.service';
 import { Local } from 'src/models/locais.model';
 
 @Component({

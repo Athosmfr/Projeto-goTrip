@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { VooService } from 'src/app/services/voo.service';
+import { VooService } from 'src/services/voo.service';
 import { Voo } from 'src/models/voo.model';
 
 @Component({

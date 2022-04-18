@@ -1,4 +1,4 @@
-import { VooService } from './../../../../services/voo.service';
+import { VooService } from '../../../../../services/voo.service';
 import { Voo } from './../../../../../models/voo.model';
 import { Component, OnInit } from '@angular/core';
 

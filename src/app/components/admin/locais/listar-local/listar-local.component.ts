@@ -1,5 +1,5 @@
 import { Local } from 'src/models/locais.model';
-import { LocaisService } from 'src/app/services/locais.service';
+import { LocaisService } from 'src/services/locais.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

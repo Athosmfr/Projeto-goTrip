@@ -1,4 +1,4 @@
-import { VooService } from './../../../../services/voo.service';
+import { VooService } from '../../../../../services/voo.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Voo } from 'src/models/voo.model';

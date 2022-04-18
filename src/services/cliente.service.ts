@@ -1,4 +1,4 @@
-import { Cliente } from './../../models/clinte.model';
+import { Cliente } from '../models/clinte.model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
