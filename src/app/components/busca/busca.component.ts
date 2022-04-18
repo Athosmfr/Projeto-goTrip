@@ -10,12 +10,39 @@ export class BuscaComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
+  id!: number;
+  origem!: string;
+
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
+      this.id = params['id'];
+      this.origem = params['origem'];
+      // console.log(params['id']);
+      // console.log(params['origem']);
       console.log(params);
-      console.log(params['id']);
-      console.log(params['origem']);
+      console.log(this.id, this.origem);
     });
+
+    // this.route.queryParams.filter(params => params)
+    //   .subscribe(params => {
+    //     console.log(params); // { order: "popular" }
+
+    //     //this.order = params.order;
+    //     //console.log(this.order); // popular
+    //   }
+    // );
+    //const temp = this.route.snapshot.paramMap.get("id");
+    //console.log(temp);
+    // this.route.paramMap.subscribe(params => {
+    //   console.log(params.get("id"));
+    // })
+    //   .subscribe(params => {
+    //     console.log(params); // { order: "popular" }
+
+    //     // this.order = params.order;
+    //     // console.log(this.order); // popular
+    //   }
+    // );
   }
 
 }
