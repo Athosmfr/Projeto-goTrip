@@ -1,0 +1,43 @@
+<div class="tituloListas">
+    <h1>Lista de Voos</h1>
+    <button class="" routerLink="/admin/voos/incluir" color="primary">Incluir</button>
+</div>
+<table mat-table [dataSource]="voos">
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let voo"> {{voo.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="origem">
+        <th mat-header-cell *matHeaderCellDef> Origem </th>
+        <td mat-cell *matCellDef="let voo"> {{voo.origem}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="destino">
+        <th mat-header-cell *matHeaderCellDef> Destino </th>
+        <td mat-cell *matCellDef="let voo"> {{voo.destino}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="data_ida">
+        <th mat-header-cell *matHeaderCellDef> Data de ida </th>
+        <td mat-cell *matCellDef="let voo"> {{voo.data_ida}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="data_volta">
+        <th mat-header-cell *matHeaderCellDef> Data de volta </th>
+        <td mat-cell *matCellDef="let voo"> {{voo.data_volta}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center; padding-right: 35px"> Ações </th>
+        <td class="ultima-coluna" mat-cell *matCellDef="let voo">
+            <a routerLink="/admin/voos/editar/{{ voo.id }}">Editar</a>
+            <a routerLink="/admin/voos/excluir/{{ voo.id }}">Excluir</a>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colunas"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunas;"></tr>
+</table>
+

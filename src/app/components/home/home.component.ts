@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
-import { CadastroService } from 'src/app/services/cadastro.service';
+import { LocaisService } from 'src/app/services/locais.service';
 import { Local } from 'src/models/locais.model';
 
 @Component({
@@ -10,13 +10,13 @@ import { Local } from 'src/models/locais.model';
 })
 export class HomeComponent implements OnInit {
 
-  locais: Observable<Local[]> = new Observable<Local[]>();
-  URL: string = "http://localhost:3001/locais/";
+  locais: Local[] = [];
 
-  constructor(private service: CadastroService) { }
+  constructor(private locaisService: LocaisService) { }
 
   ngOnInit(): void {
-
+    this.locaisService.listar().subscribe(locais => {
+      this.locais = locais;
+    });
   }
-
 }

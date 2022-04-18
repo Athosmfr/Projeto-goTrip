@@ -1,6 +1,6 @@
-export interface Local {
-    id: Number;
-    nomeLocal: String;
-    descricao: String;
-    foto: String;
+export class Local {
+    id: number = 0;
+    nomeLocal: String = '';
+    descricao: String = '';
+    foto: String = '';
 }

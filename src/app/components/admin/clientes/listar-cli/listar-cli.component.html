@@ -1,0 +1,32 @@
+<div class="tituloListas">
+    <h1>Lista de clientes</h1>
+    <button class="" routerLink="/admin/clientes/incluir" color="primary">Incluir</button>
+</div>
+<table mat-table [dataSource]="clientes">
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let cliente"> {{cliente.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="nome">
+        <th mat-header-cell *matHeaderCellDef> Nome </th>
+        <td mat-cell *matCellDef="let cliente"> {{cliente.nome}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="idade">
+        <th mat-header-cell *matHeaderCellDef> Idade </th>
+        <td mat-cell *matCellDef="let cliente"> {{cliente.idade}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acoes">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center; padding-right: 35px"> Ações </th>
+        <td class="ultima-coluna" mat-cell *matCellDef="let cliente">
+            <a routerLink="/admin/clientes/editar/{{ cliente.id }}">Editar</a>
+            <a routerLink="/admin/clientes/excluir/{{ cliente.id }}">Excluir</a>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="colunas"></tr>
+    <tr mat-row *matRowDef="let row; columns: colunas;"></tr>
+</table>

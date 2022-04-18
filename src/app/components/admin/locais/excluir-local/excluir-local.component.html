@@ -1,0 +1,25 @@
+<div class="tituloListas">
+    <h1>Excluir Local</h1>
+</div>
+<form>
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field>
+                <input matInput type="text" placeholder="id" name="id" [(ngModel)]="local.id">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="text" placeholder="nome" name="nomeLocal" [(ngModel)]="local.nomeLocal">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="text" placeholder="descricao" name="descricao" [(ngModel)]="local.descricao">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="text" placeholder="foto" name="foto" [(ngModel)]="local.foto">
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button class="btnMyFood" (click)="excluirLocal()" color="primary">Excluir</button>
+            <button mat-raised-button class="btnMyFood" routerLink="/admin/locais">Cancelar</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

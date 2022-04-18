@@ -1,9 +1,6 @@
-export interface Passagem{
-    id: Number,
-    origem: string,
-    destino: string,
-    data_ida: Date,
-    data_volta: Date,
-    preco: number,
-    taxas: number
+export class Passagem {
+    id: number = 0;
+    preco: number = 0;
+    taxas: number = 0;
+    qtde_pessoas: number = 0;
 }
