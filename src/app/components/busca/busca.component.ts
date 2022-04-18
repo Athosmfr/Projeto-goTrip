@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-busca',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      console.log(params);
+      console.log(params['id']);
+      console.log(params['origem']);
+    });
   }
 
 }
