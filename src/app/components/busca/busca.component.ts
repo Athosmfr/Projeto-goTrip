@@ -12,15 +12,17 @@ export class BuscaComponent implements OnInit {
 
   id!: number;
   origem!: string;
+  teste!: string;
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.id = params['id'];
       this.origem = params['origem'];
+      this.teste = params['teste'];
       // console.log(params['id']);
       // console.log(params['origem']);
-      console.log(params);
-      console.log(this.id, this.origem);
+      //console.log(params);
+      console.log(this.id, this.origem, this.teste);
     });
 
     // this.route.queryParams.filter(params => params)
